@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Capstone 1</title>
+</head>
+<body>
+
+<!--01. Navbar with black background and white letters - Home, About, Contact-->
+
+
+<navbar>
+    <div class="container-fluid nav">
+            
+        <a class="nav-link active" aria-current="page" href="../CAPSTONE 1/index.html">Home</a>
+            
+        <a class="nav-link" href="#aboutme">About</a>
+            
+        <a class="nav-link" href="#contactme">Contact</a>
+            
+        <a class="nav-link" href="wwww.linkedin.com/in/sanja-juric"><i style="height: 15px; width: 16px; font-size:18px;border-radius:4px; background-color: #fff; color:#0a66c2"; class="fa">&#xf08c;</i></a>
+          
+    </div>
+</navbar>
+
+<div class="container-fluid grid">
+    <!--02. Cover Image-->
+    <section id="cover-image-1"></section>
+  
+    <!--03. Another black navbar-->
+    <section id="navbar2">
+        <div>
+            <nav style="width: 100vw;"></nav>
+        </div>
+    </section>
+
+    <!--04. Centered square with white margins, black background and portrait photo-->
+<section id="portrait">
+    <div class="container portrait">
+        <img src="./images/woman.png" alt="business woman">
+    </div>
+</section>
+
+</div>
+
+<!--05. Hero section - Hello World, I'm Sanja Juric-->
+<section id="hero">
+    <div class="px-0 py-1 my-0 text-center"><br>
+        <h1>Hello World</h1>
+        <h2>I'm Sanja Juric</h2>
+        <h3>a website developer</h3>
+      </div>
+</section>
+</div>
+
+<!--06. Keyboard with a long string-->
+<section id="keyboard">
+    <div class="container keyboard">
+        <img src="./images/about-me.png" alt="about me keyboard" class="about-me">
+    </div>
+</section>
+
+<!--07. Paragraph about me-->
+<section id="about me">
+    <div class="container"><br>
+        <a name="aboutme" id="aboutme"><p>Embark on an exhilarating journey into website development with me. 
+            Driven by a deep passion, I find joy in crafting projects from 
+            scratch, witnessing ideas come to life online. Leveraging my 
+            nursing background, I aim to seamlessly integrate healthcare 
+            insights into coding. An advocate for veganism, I'm committed to 
+            creating digital solutions aligned with ethical values. Beyond 
+            coding, I thrive in the lively atmosphere of parties, merging my 
+            love for technology with a celebration of life. Join me on this 
+            exciting journey, where compassion meets code, and let's build a 
+            digital future together!</p></a>
+    </div>
+</section>
+
+<!--08. Black div with 3 rounds - education, skills and projects-->
+<section id="education-skills-aboutme">
+        <div class="container-fluid skills">
+            <div class="circle education" onclick="showPopup('education-popup')">Education</div>
+            <div class="circle skills" onclick="showPopup('skills-popup')">Skills</div>
+            <div class="circle projects" onclick="showPopup('projects-popup')">Projects</div>
+        </div>
+
+        <div class="popup" id="education-popup">
+            <!-- Content for the Education popup -->
+            <ul>
+                <li>For my nursing education and experience, please check my <a href="www.linkedin.com/in/sanja-juric">LinkedIn</a> profile.</li>
+                <li>May 2023 - CFG Kickstarted Course - Web Developement</li>
+                <li>July 2023 - Certified in Cybersecurity course</li>
+                <li>January 2024 - The Complete Web Developement Bootcamp (ongoing)</li>
+                <li>November 2024 - Quantic MBA (ongoing)</li>
+                
+            </ul>
+            <button onclick="closePopup('education-popup')">Close</button>
+        </div>
+        
+        <div class="popup" id="skills-popup">
+            <!-- Content for the Skills popup -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Canva</li>
+            </ul>
+            <button onclick="closePopup('skills-popup')">Close</button>
+        </div>
+        
+        <div class="popup" id="projects-popup">
+            <!-- Content for the Projects popup -->
+            <ul>
+                <li><a href="https://saracmsantos.github.io/VeganismProject-CodeFirstGirls/index.html">My first group project - a vegan lifestyle website</a></li>
+                <li><a href="https://sanja247.github.io/halloween_party/index.html">Halloween party menu</a></li>
+                <li><a href="https://sanja247.github.io/xmas-2023/">Christmas party menu</a></li>
+                <li><a href="https://sanja247.github.io/rasa_xmas2023/">Merry Christmas card</a></li>
+            </ul>
+            <button onclick="closePopup('projects-popup')">Close</button>
+        </div>
+</section>
+
+<!--BIG GRID FOR 3 ITEMS - MY STORY, PARAGRAPH AND CONTACT FORM-->
+<div class="container-fluid big">
+    <div class="container-fluid story">
+        <!--09. White div with black margins - My story-->
+        <section id="my-story"><h3 style="color: #fff;
+            background-color: rgb(70, 12, 90, 0.7);
+            width: 140px;
+            font-weight: bold;
+            font-family: 'Yeseva One', serif;
+            padding-left: 10px;
+            margin-top: 0px;">My story
+            </h3>
+        </section>
+        <!--10. White div with black margins - Paragraph about my interests-->
+        <section id="my-interests">My world extends beyond coding to vibrant 
+            experiences. From lively parties and crafting vegan delights to 
+            DIY projects and home renovations, I thrive on creativity. Time 
+            with friends brings warmth and shared laughter. These diverse 
+            interests enrich my coding journey, infusing it with a passion 
+            for creating not just code but a digital tapestry of rich 
+            experiences.</section>
+    </div>
+    <div class="contact-me">
+        <h3 style="font-weight: bold;
+            font-family: 'Yeseva One', serif;
+            margin-left: 20px;
+            margin-top: 135px;"> <a name="contactme" id="contactme">CONTACT ME</a> 
+        </h3>
+
+    <form action="https://formspree.io/f/mleqenbe" method="POST">
+        <label><textarea style="    
+            max-width:420px; 
+            margin:2px;
+            margin-left: 20px; 
+            align-self: center;
+            font-family: 'Yeseva One', serif;
+            width: 350px; height: 30px;" 
+            name="name" type="text" class="feedback-input" placeholder="Your name"></textarea></label>
+        <label><input style="    
+            max-width:420px; 
+            margin: 2px;
+            margin-left: 20px;
+            align-self: center;
+            font-family: 'Yeseva One', serif;
+            width: 350px; height: 30px;" name="email" type="text" class="feedback-input" placeholder="Your email address"></label>
+        <label><textarea style="    
+            max-width:420px; 
+            margin: 2px;
+            margin-left: 20px;
+            align-self: center;
+            font-family: 'Yeseva One', serif;
+            width: 350px; height: 90px;" name="message" class="feedback-input" placeholder="Your message"></textarea></label>
+        <button id="send" type="submit">Send</button>
+    </form>
+</div>
+
+
+<!--12. Another black navbar-->
+<section id="navbar2">
+    <div>
+        <nav></nav>
+    </div>
+</section>
+<!--13. Cover background-->
+<div class="container-fluid"></div><section id="cover-image-2"></section>
+
+<!--14. Another black navbar with white text-->
+<footer>
+    <div class="container-fluid footer">
+        <div id="footer1">Designed by Sanja Juric</div>
+        <div id="footer2"><a href="wwww.linkedin.com/in/sanja-juric"><i style="font-size:20px;color:#0a66c2" class="fa">&#xf08c;</i></a></div>
+    </div>
+</footer>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+    var popups = document.querySelectorAll('.popup');
+    popups.forEach(function (popup) {
+        popup.style.display = 'none';
+    });
+});
+
+function showPopup(popupId) {
+    // Hide all pop-ups
+    var popups = document.querySelectorAll('.popup');
+    popups.forEach(function (popup) {
+        popup.style.display = 'none';
+    });
+
+    // Show the clicked pop-up
+    document.getElementById(popupId).style.display = 'block';
+}
+
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = 'none';
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-bFmCVaOBpBUD2sTg1fYSq50aB+w3QKMpQrE+3WWxPEiL4paBIaEg6LZd+dggyEIm" crossorigin="anonymous"></script>
+
+</body>
+</html>
