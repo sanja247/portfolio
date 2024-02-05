@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Capstone 1</title>
+    <title>Sanja Juric</title>
 </head>
 <body>
 
@@ -19,13 +19,13 @@
 <navbar>
     <div class="container-fluid nav">
             
-        <a class="nav-link active" aria-current="page" href="https://sanja247.github.io/portfolio/">Home</a>
+        <a class="nav-link active" aria-current="page" href="../CAPSTONE 1/index.html">Home</a>
             
         <a class="nav-link" href="#aboutme">About</a>
             
         <a class="nav-link" href="#contactme">Contact</a>
-            
-        <a class="nav-link" href="wwww.linkedin.com/in/sanja-juric"><i style="height: 15px; width: 16px; font-size:18px;border-radius:4px; background-color: #fff; color:#0a66c2"; class="fa">&#xf08c;</i></a>
+
+        <p class="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/sanja-juric">in</a></p>
           
     </div>
 </navbar>
@@ -86,12 +86,12 @@
 <!--08. Black div with 3 rounds - education, skills and projects-->
 <section id="education-skills-aboutme">
         <div class="container-fluid skills">
-            <div class="circle education" onclick="showPopup('education-popup')">Education</div>
-            <div class="circle skills" onclick="showPopup('skills-popup')">Skills</div>
-            <div class="circle projects" onclick="showPopup('projects-popup')">Projects</div>
+            <div class="circle education" onclick="showPopup('education-popup')"><a href="#education" style="color: white;">Education</a></div>
+            <div class="circle skills" onclick="showPopup('skills-popup')"><a href="#skills" style="color: white;">Skills</a></div>
+            <div class="circle projects" onclick="showPopup('projects-popup')"><a href="#projects" style="color: white;">Projects</a></div>
         </div>
 
-        <div class="popup" id="education-popup">
+        <div class="popup" id="education-popup"><a name="education" id="education"></a>
             <!-- Content for the Education popup -->
             <ul>
                 <li>For my nursing education and experience, please check my <a href="www.linkedin.com/in/sanja-juric">LinkedIn</a> profile.</li>
@@ -104,7 +104,7 @@
             <button onclick="closePopup('education-popup')">Close</button>
         </div>
         
-        <div class="popup" id="skills-popup">
+        <div class="popup" id="skills-popup"><a name="skills" id="skills"></a>
             <!-- Content for the Skills popup -->
             <ul>
                 <li>HTML</li>
@@ -114,7 +114,7 @@
             <button onclick="closePopup('skills-popup')">Close</button>
         </div>
         
-        <div class="popup" id="projects-popup">
+        <div class="popup" id="projects-popup"><a name="projects" id="projects"></a>
             <!-- Content for the Projects popup -->
             <ul>
                 <li><a href="https://saracmsantos.github.io/VeganismProject-CodeFirstGirls/index.html">My first group project - a vegan lifestyle website</a></li>
